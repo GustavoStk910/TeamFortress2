@@ -1,0 +1,225 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgb(220, 103, 0), rgb(0, 0, 0));
+    color: white;
+    height: 100px;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'tf2font1';
+    position: fixed;
+    z-index: 10;
+    top: 0; /* Fixa o header no topo */
+    left: 0;
+}
+
+#logo {
+    width: 100px;
+    top: 10px;
+    margin-left: 45%;
+}
+
+#menu {
+    padding-left: 35%;
+    list-style: none;
+    margin-top: 0px;
+}
+
+li {
+    float: left;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+li:hover {
+    background: linear-gradient( rgb(255, 255, 255), rgb(135, 135, 135));
+    color: orangered;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap > .bg-video {
+    position: absolute;
+    padding-top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap > .bg-video > video {
+    width: 100%;
+}
+
+#imagem_fundo {
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+
+#titulo {
+    padding-top: 20%;
+    line-height: 0.6;
+    height: 155px;
+    width: 50%;
+}
+
+#subtitulo {
+    color: white;
+    margin-left: 20%;
+    font-family: 'tf2font';
+    margin-right: 20%;
+    border-top: 3px solid white;
+    text-shadow: 2px 2px black;
+}
+
+#acao {
+    color: white;
+    text-shadow: 2px 2px black;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient( rgb(255, 255, 255), rgb(135, 135, 135));
+    border-radius: 5px 5px 5px 5px;
+}
+
+#acao:hover {
+    background: linear-gradient( rgb(255, 255, 255), rgb(135, 135, 135));
+    color: orangered;
+}
+
+.icone {
+    width: 51px;
+}
+
+section {
+    padding: 20px;
+    float: left;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.destaque {
+    background-color: #f7f7f7;
+}
+
+.imgeco {
+    width: 90%;
+    height: 50%;
+}
+
+.arrumar {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+
+.dois {
+    width: 40%;
+}
+
+.quatro {
+    width: 15%;
+}
+
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+
+.justificado {
+    text-align: justify;
+    font-family: 'tf2font2';
+}
+
+.centralizado {
+    text-align: center;
+}
+
+footer {
+    background-color: #4a473d;;
+    float: left;
+    width: 100%;
+    height: 110px;
+    color: white;
+    clear: both;
+}
+
+
+
+.videozin {
+    padding: 0;
+    width: 100%;
+    margin: 10px auto;
+}
+@media (max-width: 941px) {
+   header {
+       position: relative; 
+       height: auto; 
+       height: 110px;
+   }
+   #menu {
+    width:100%;
+    padding-left: 0%;
+   }
+    
+   .arrumar, .dois, .tres, .quatro {
+        display: block;   
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+   }
+   #logo {
+       margin-left: 50%;
+       transform: translateX(-50%);
+   }
+
+   footer {
+    height: 33%;
+   }
+
+    #acao {
+        padding: 1.2% 1.2% 1.2% 1.2%;
+        font-size: 100%;
+    }
+
+   #subtitulo {
+    font-size: 70%;
+   }
+
+   #imagem_fundo {
+    height: 35%;
+   }
+
+   #titulo {
+    padding-top: 9%;
+    line-height: 0.6;
+    height: 30%;
+    width: 50%;
+   }
+}
+@font-face {
+    font-family: 'tf2font';
+    src: url(tf2build.ttf);
+}
+
+@font-face {
+    font-family: 'tf2font1';
+    src: url(TF2.ttf);
+}
+
+@font-face {
+    font-family: 'tf2font2';
+    src: url(TF2secondary.ttf);
+}
